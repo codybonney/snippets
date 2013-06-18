@@ -5,7 +5,7 @@ var Basic = (function () {
     }
 
     Basic.prototype.output = function () {
-        return "Store value is: " + this.val;
+        return "Stored value is: " + this.val;
     };
 
     return Basic;
