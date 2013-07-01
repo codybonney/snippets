@@ -10,3 +10,6 @@ var Basic = (function () {
 
     return Basic;
 })();
+
+var basic = new Basic("someValue");
+console.log(basic.output());

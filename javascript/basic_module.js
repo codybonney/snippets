@@ -15,3 +15,6 @@ var BasicModule;
     })();
 
 })(BasicModule || (BasicModule = {}));
+
+var basic = new BasicModule.BasicClass("someValue");
+console.log(basic.output());
