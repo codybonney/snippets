@@ -29,11 +29,11 @@ brew install ffmpeg \
 # height: 525px
 
 ffmpeg -i \
-    pants.mov \
+    inputFile.mov \
     -acodec libvorbis \
     -ac 2 \
     -ab 128k \
     -ar 44100 \
     -b:v 1200k \
     -s 730x525 \
-    pants.ogv
+    outputFile.ogv
