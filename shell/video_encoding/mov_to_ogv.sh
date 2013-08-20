@@ -13,6 +13,6 @@ brew install ffmpeg --with-freetype --with-theora --with-libvorbis --with-libvpx
 # width: 730px
 # height: 525px
 
-ffmpeg -i pants.mov \
+ffmpeg -i inputFile.mov \
   -acodec libvorbis -ac 2 -ab 128k -ar 44100 \
-  -b:v 1200k -s 730x525 pants.ogv
+  -b:v 1200k -s 730x525 outputFile.ogv
