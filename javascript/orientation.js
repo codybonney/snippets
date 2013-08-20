@@ -3,7 +3,6 @@ var Orientation = (function() {
 
     function Orientation(args) {
         self.args = args;
-        Orientation.prototype.callbacks();
     }
 
     // return true if in portrait
@@ -53,6 +52,8 @@ var Orientation = (function() {
             console.log('landscape mode!');
         }
     });
+
+    o.callbacks();
 
     if(o.portrait()) {
         console.log('In portrait mode');
