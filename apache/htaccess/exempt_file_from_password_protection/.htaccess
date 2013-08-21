@@ -1,0 +1,15 @@
+AuthUserFile /var/www/.htpasswd
+AuthName "Please Log In"
+AuthType Basic
+Require valid-user
+Order allow, deny
+Satisfy any
+
+# Exempt mp4 and m4v files from password protection
+# This prevents extra authentication dialogs from popping up in safari
+<Files ~ "\.(mp4|m4v)">
+    AddType video/mp4 mp4
+    order allow,deny
+    allow from all
+    satisfy any
+</Files>
