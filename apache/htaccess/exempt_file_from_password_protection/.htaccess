@@ -5,10 +5,11 @@ Require valid-user
 Order allow, deny
 Satisfy any
 
-# Exempt mp4 and m4v files from password protection
+# Exempt mp4, m4v, and mp3 files from password protection
 # This prevents extra authentication dialogs from popping up in safari
-<Files ~ "\.(mp4|m4v)">
+<Files ~ "\.(mp4|m4v|mp3)">
     AddType video/mp4 mp4
+    AddType audio/x-mp3 mp3
     order allow,deny
     allow from all
     satisfy any
