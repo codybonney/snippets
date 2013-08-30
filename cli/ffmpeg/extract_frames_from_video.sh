@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ffmpeg -i sourcefile.mov -y -ss 5 -an -f image2 -r 4 filename%03d.png
 
 # -y
