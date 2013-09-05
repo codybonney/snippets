@@ -1,0 +1,1 @@
+usermod -g group user
