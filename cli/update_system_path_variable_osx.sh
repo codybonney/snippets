@@ -1,3 +1,4 @@
+#!/bin/sh
 # open this file
 sudo vim ~/.bash_profile
 

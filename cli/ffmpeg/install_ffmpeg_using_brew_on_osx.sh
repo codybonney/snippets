@@ -1,3 +1,4 @@
+#!/bin/sh
 # install brew if you haven't already
 # http://brew.sh/
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"

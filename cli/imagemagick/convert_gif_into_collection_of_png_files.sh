@@ -1,3 +1,5 @@
+#!/bin/sh
+
 convert animated.gif extracted.png
 
 # outputs
