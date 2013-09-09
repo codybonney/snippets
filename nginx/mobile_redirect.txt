@@ -1,0 +1,5 @@
+location / {
+    if ($http_user_agent ~* '(android|blackberry|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile)') {
+        return 301 /mobile$request_uri;
+    }
+}
