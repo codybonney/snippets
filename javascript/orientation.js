@@ -7,12 +7,12 @@ var Orientation = (function() {
 
     // return true if in portrait
     Orientation.prototype.portrait = function () {
-        return window.orientation === 0 || window.orientation === 180;
+        return window.innerHeight > window.innerWidth;
     };
 
     // return true if in landscape
     Orientation.prototype.landscape = function () {
-        return window.orientation === 90 || window.orientation === -90;
+        return window.innerWidth > window.innerHeight;
     };
 
     Orientation.prototype.callbacks = function () {
