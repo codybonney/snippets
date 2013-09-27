@@ -1,8 +1,17 @@
-MyClass.prototype.resetInterval = function() {
-    clearInterval(this.myInterval);
+var MyClass = (function () {
 
-    var self = this;
-    this.myInterval = setInterval(function() {
-        self.myFunction.apply(self);
-    }, 4000);
-};
+    function MyClass() {
+	    var self = this;
+		self.myInterval = setInterval(function() {
+			self.myClassMethod.apply(self);
+		}, 4000);
+    }
+
+	MyClass.prototype.myClassMethod = function() {
+		console.log(this);
+	};
+
+    return MyClass;
+})();
+
+var myInstance = new MyClass();
