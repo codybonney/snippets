@@ -3,7 +3,7 @@ var MyClass = (function () {
     function MyClass() {
 	    var self = this;
 		self.myInterval = setInterval(function() {
-			self.myClassMethod.apply(self);
+			self.myClassMethod();
 		}, 4000);
     }
 
