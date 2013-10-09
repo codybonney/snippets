@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo docker run -d your/image-tag
+sudo docker run -d your/container-id
