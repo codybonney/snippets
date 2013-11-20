@@ -1,0 +1,10 @@
+<!-- Comparing Dictionary Length in IF Statement in a Django template-->
+<!-- If article_list is empty, show an error message -->
+
+{% for article in article_list %}
+    {% include "results/article.html" %}
+{% endfor %}
+
+{% ifequal article_list|length 0 %}
+    <h3 class="no-results-article-list">Sorry, no results found.</h3>
+{% endifequal %}
