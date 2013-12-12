@@ -8,7 +8,7 @@ solr = pysolr.Solr('http://rhsearch2.us.randomhouse.com:8080/solr/rhkids/', time
 # How you'd index data.
 solr.add([
     {
-     	"id": "doc_1",
+        "id": "doc_1",
         "title": "A test document elmo 1",
     }
 ])
