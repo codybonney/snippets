@@ -1,0 +1,5 @@
+RewriteEngine on
+
+# perform redirect if http://domain1.com
+RewriteCond %{HTTP_HOST} ^http://domain1.com [NC]
+RewriteRule ^(.*)$ http://domain2.com/subdir/$1 [R=301,L]
